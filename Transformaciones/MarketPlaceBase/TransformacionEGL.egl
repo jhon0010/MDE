@@ -31,8 +31,15 @@ width: 99.7%
  for(elementos in clases.codeElement)
  {
  if (elementos.codeRelation.select(a|a.isTypeOf(mp!HasValue)).select(a|a.annotation.size()>0).size()>0){
- tieneAnotaciones=true;
- break;
+
+		for (rel in elementos.codeRelation){
+			%]
+				[%=rel.to.name%]
+			[%	
+		}
+	
+ 	tieneAnotaciones=true;
+ 	break;
  }
  }
  if(clases.codeRelation.select(a|a.isTypeOf(mp!HasValue)).select(a|a.annotation.size()>0).size()>0 or tieneAnotaciones==true){
