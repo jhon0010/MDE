@@ -24,11 +24,35 @@ width: 99.7%
 <a  name="top"></a>
 <h1 align="center">Market Place Javadoc</h1>
 [%
+	var clase;
+
+ for(clases in mp!ClassUnit.all)
+ {
+ var tieneAnotaciones=false; 
+ for(elementos in clases.codeElement)
+ {
+ if (elementos.codeRelation.select(a|a.isTypeOf(mp!HasValue)).select(a|a.annotation.size()>0).size()>0){
+ tieneAnotaciones=true;
+ break;
+ }
+ }
+ if(clases.codeRelation.select(a|a.isTypeOf(mp!HasValue)).select(a|a.annotation.size()>0).size()>0 or tieneAnotaciones==true){
+ clase = clases;
+ %]
+ <a  href="#[%=clases.name%]">[%=clases.name%]</a>-
+ [%
+ }
+ }
+%]
+<br>
+<br>
+
+[%
 
  for(clase in ClassUnit.all)
  { 
  				%]
-				<h1>Clase: [%=clase.name%]</h1>
+				<div id=[%=clase.name%]> <h1>Clase: [%=clase.name%]</h1>
 				<table  border="1" style="width: 100%">
 				<tr >
 				<td colspan="2" bgcolor="#9FD2F0">
@@ -55,11 +79,13 @@ width: 99.7%
 	 		 		%]
 				</table>
 				<a  href="#top">Top</a>
+				</div>
 				<br>
 				<br>
 				[%
  }
 %]
+
 </div>
 </body>
 </html>
