@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ASCII"?>
+<logJMeter:JMeter
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:logJMeter="http://www.uniandes.edu/gramaticajmeter/LogJMeter"
+    xsi:schemaLocation="http://www.uniandes.edu/gramaticajmeter/LogJMeter LogJMeter.ecore">
+  <architectureResults
+      architecture="Cloud_Rest">
+    <headerAggregate>
+      <header>stimulus</header>
+      <header>minresponsetime</header>
+      <header>maxresponsetime</header>
+      <header>errorcount</header>
+      <header>totalreq</header>
+      <header>threads</header>
+      <header>averagelatency</header>
+      <header>minlatency</header>
+      <header>maxlatency</header>
+      <header>percentageerror</header>
+      <header>throughput</header>
+    </headerAggregate>
+    <headerLatency>
+      <header>timeStamp</header>
+      <header>elapsed</header>
+      <header>label</header>
+      <header>responseCode</header>
+      <header>responseMessage</header>
+      <header>threadName</header>
+      <header>dataType</header>
+      <header>success</header>
+      <header>bytes</header>
+      <header>grpThreads</header>
+      <header>allThreads</header>
+      <header>Latency</header>
+    </headerLatency>
+  </architectureResults>
+</logJMeter:JMeter>

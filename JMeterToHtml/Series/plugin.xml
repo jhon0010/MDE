@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated series -->
+      <package uri="http://www.example.org/series" class="series.SeriesPackage" genModel="model/series.genmodel"></package>
+   </extension>
+
+</plugin>
