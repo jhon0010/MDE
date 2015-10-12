@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Importando los scripts y estilos de bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css\bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css\fileinput.css">
+
+
+    <script src="js\jquery-1.11.3.min.js"></script>
+    <script src="js\bootstrap.js"></script>
+    <script src="js\fileinput.js"></script>
+
+    <title>Exposición canina WEB</title>
+  </head>
+
+  <body>
+
+    <div class="row">
+      <div class="col-md-3 col-md-offset-1">
+          <table class="table table-bordered" style="margin-top: 20px;">
+            <thead>
+              <tr>
+                <th>Perros en la exposición</th>
+              </tr>
+            </thead>
+             <tbody>
+                  <tr><td>Puppy (Gran Danés)</td></tr>
+                  <tr><td>Taylor (Beagle)</td></tr>
+                  <tr><td>Cobrador (Akita)</td></tr>
+                  <tr><td>Brutal y Mammut (Doberman)</td></tr>
+                  <tr><td>Maximus (Mastin Español)</td></tr>
+                  <tr><td>Tony (Bull Terrier)</td></tr>
+                  <tr><td>Nieve (Gigante de los Pireneos)</td></tr>
+                  <tr><td>Titán (Pug)</td></tr>
+                  <tr><td>Leviatán (Chiuahua)</td></tr>
+                  <tr><td>Tarzán (Gosque)</td></tr>
+                  <tr><td>Fido (Mastin Napolitano)</td></tr>
+              </tbody>
+          </table>
+      </div>
+
+      <div class="col-md-4">
+        <h2>Datos perro</h2>
+        <img class="img-responsive center-block" src="img/akita.jpg" alt="Chania" width="304" height="236">
+
+        <label for="usr">Nombre:</label>
+        <input type="text" class="form-control" id="usr">
+
+        <label for="raz">Raza:</label>
+        <input type="text" class="form-control" id="raz">
+
+        <label for="edad">Edad:</label>
+        <input type="text" class="form-control" id="edad">
+
+        <label for="puntos">Puntos:</label>
+        <input type="text" class="form-control" id="puntos">
+
+      </div>
+
+      <div class="col-md-3">
+        <h2>Busqueda y ordenamiento</h2>
+
+        <button type="button" class="btn btn-primary btn-block">Ordenar por raza</button>
+        <button type="button" class="btn btn-primary btn-block">Ordenar por Puntos</button>
+        <button type="button" class="btn btn-primary btn-block">Ordenar por Edad</button>
+        <button type="button" class="btn btn-primary btn-block">Ordenar por Perro</button>
+
+      </div>
+</div>
+
+      <div class="row">
+
+        <div class="col-md-7 col-md-offset-1">
+          <h2>Agregar perro</h2>
+          <label for="usr">Nombre:</label>
+          <input type="text" class="form-control" id="usr">
+
+          <label for="raz">Raza:</label>
+          <input type="text" class="form-control" id="raz">
+
+          <label for="edad">Edad:</label>
+          <input type="text" class="form-control" id="edad">
+
+          <label for="puntos">Puntos:</label>
+          <input type="text" class="form-control" id="puntos">
+
+          <label class="control-label">Select File</label>
+          <input id="input-1a" type="file" class="file" data-show-preview="false">
+        </div>
+
+          <div class="col-md-3">
+            <h2>Consultas exposición</h2>
+
+            <button type="button" class="btn btn-primary btn-block">Ganador</button>
+            <button type="button" class="btn btn-primary btn-block">Menor puntaje</button>
+            <button type="button" class="btn btn-primary btn-block">Más viejo</button>
+
+          </div>
+
+
+      </div>
+
+  </body>
+
+</html>

@@ -1,17 +1,8 @@
-[%	
-var root : mp!CodeModel:= mp!CodeModel.all.at(0);
-%]
-
-
-
-[% for (c in ClassUnit.all) { 
-
-	for(ele in c.codeElement) {
-	%]----------------------- [%=c.name%]  [%
-		for (rel in ele.codeRelation){
-			%]
-				[%=rel.to.name%]
-			[%	
-		}
-	}
-} %]
+[%
+operation Class isAnonymous() : Boolean {
+return self.name.isUndefined();
+}
+operation removeOneClass() {
+ delete Class.all.random();
+ }
+ %]
