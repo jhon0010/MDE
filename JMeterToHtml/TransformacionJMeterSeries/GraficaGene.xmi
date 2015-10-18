@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:series="http://www.example.org/series">
+  <series:Grafica/>
+  <series:Grafica titulo="Basic Colum" subtitulo="" tipo="basicColumn">
+    <graficaSerie name="Cloud_Rest">
+      <serieDato name="4578056"/>
+      <serieDato name="8755672"/>
+    </graficaSerie>
+    <graficaSerie name="Local_Rest">
+      <serieDato name="45.78056"/>
+      <serieDato name="1.722672"/>
+    </graficaSerie>
+  </series:Grafica>
+</xmi:XMI>

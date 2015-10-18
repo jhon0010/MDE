@@ -16,11 +16,16 @@ $(function () {
   [%
   var gf=grafica!Grafica.all.at(0);
   //Se crea un array con los elementos del eje x
-  for(ct in gf.graficaEjeX.at(0).ejeXCategoria){
-  %]
-  categorias.push('[%=ct.name%]')
-  [%
+  
+  if (gf.graficaEjeX.size() > 0) {
+	for(ct in gf.graficaEjeX.at(0).ejeXCategoria){
+	  %]
+	  categorias.push('[%=ct.name%]')
+	  [%
+	  }  
   }
+  
+  
   //Se crea dos arreglos, uno para los datos de la serie y otro que contenga el nombre y los datos de cada serie.
   for(series in gf.graficaSerie){
   %]var datosSerie=[];

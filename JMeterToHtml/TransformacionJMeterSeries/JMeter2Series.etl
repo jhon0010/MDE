@@ -15,7 +15,7 @@ transform
 to
     t:series!Serie{
     t.name=s.architecture;    
-    t.serieDato=s.resultAggregate.equivalent();
+    t.serieDato=s.resultsLatency.equivalent();
     
     }  
 rule Results2Dato
@@ -23,8 +23,18 @@ transform
     s:jm!Result
 to
     t:series!Dato{    
-    guard : (s.resultField.at(0).value='Get Competitors' or s.resultField.at(0).value='Add Competitors')    
+    guard : (s.resultField.at(0).value<>'Get Competitors' or s.resultField.at(0).value<>'Add Competitors')    
     t.name=s.resultField.last().value;
-    }           
+    }          
     
+    
+rule Results2Categoria
+transform
+    s:jm!Result
+to
+    t:series!Categoria{
+     guard : (s.resultField.at(0).value<>'Get Competitors' and s.resultField.at(0).value<>'Add Competitors')  
+   	 t.name=s.resultField.last().value;
+    }
+        
     
