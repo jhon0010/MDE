@@ -1,0 +1,10 @@
+[%
+for(clase in DB!Table.all)
+{
+%]
+CREATE TABLE [%= clase.name.replace("Entity", "") %]
+(
+)
+[%
+}
+%]
