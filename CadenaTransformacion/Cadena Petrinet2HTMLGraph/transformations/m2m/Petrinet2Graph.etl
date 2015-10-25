@@ -1,0 +1,5 @@
+rule Petrinet2Graph 
+	transform p : Petrinet!Petrinet
+	to g : Graph!Graph {
+		// COMPLETAR!
+	}

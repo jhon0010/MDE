@@ -30,9 +30,15 @@ rule MarketPlace2Relacional
 				en atributos a las columnas (columns) que está relacionadas a la tabla 
 			*/
 		   	t.columns = c.codeElement.equivalent();	
-			
 		   	
-		   	t.primaryKeys = c.codeElement.equivalent();
+		   	
+
+		   	t.primaryKeys = t.columns.select(col | col.notNull == true);
+		   	
+		   	
+			//t.columns.println();
+		   	
+		   	//t.primaryKeys = c.codeElement.equivalent();
 		   	
 	   }
 
@@ -68,9 +74,9 @@ rule attributeToColum
 					 break;
 				default :  col.type = DB!DataType#unknown;
 			}
-		}		
-
-	
+		}				 		
+		 	
+@Lazy
 rule attributeToPrimaryKey
 	transform
 		su: mp!StorableUnit
@@ -82,9 +88,9 @@ rule attributeToPrimaryKey
 			and (su.eContainer.codeRelation.select(cr|cr.isTypeOf(mp!HasValue))->select(cr|cr.annotation.size()>0).select(a|a.`to`.Name = "Entity").size() > 0
 			 or su.eContainer.codeRelation.select(cr|cr.isTypeOf(mp!HasValue))->select(cr|cr.annotation.size()>0).select(a|a.`to`.Name = "MappedSuperclass").size() > 0)
 			 and su.codeRelation.select(cr|cr.isTypeOf(mp!HasValue))->select(cr|cr.annotation.size()>0).select(a|a.`to`.Name = "Id").size() > 0
-				"PK".println();
+				//"PK".println();
 				
-			 su.println();
+			 //su.println();
 			 
 			 col.name = su.name;
 			
@@ -99,6 +105,37 @@ rule attributeToPrimaryKey
 					 break;
 				default :  col.type = DB!DataType#unknown;
 			}
-		}		
-		 		
+			
+			col.notNull = true;
+		}	
 		
+	/*
+rule attributeToForeingKey
+	transform
+		su: mp!StorableUnit
+	to
+		col: DB!ForeignKey
+		{
+	
+		guard: su.eContainer.isTypeOf(mp!ClassUnit) 
+			and (su.eContainer.codeRelation.select(cr|cr.isTypeOf(mp!HasValue))->select(cr|cr.annotation.size()>0).select(a|a.`to`.Name = "Entity").size() > 0
+			 or su.eContainer.codeRelation.select(cr|cr.isTypeOf(mp!HasValue))->select(cr|cr.annotation.size()>0).select(a|a.`to`.Name = "MappedSuperclass").size() > 0)
+			 and su.codeRelation.select(cr|cr.isTypeOf(mp!HasValue))->select(cr|cr.annotation.size()>0).select(a|a.`to`.Name = "PrimaryKeyJoinColumn").size() > 0
+				"FK".println();
+				
+			 for(a in  su.codeRelation.select(cr|cr.isTypeOf(mp!HasValue))->select(cr|cr.annotation.size()>0).select(a|a.`to`.Name = "PrimaryKeyJoinColumn")){
+			 	a.println();
+			 }
+			 
+		}	
+
+*/					 		
+		 		
+operation StorableUnit isPK()
+{
+	if(self.codeRelation.select(a|a.isTypeOf(mp!HasValue)).select(a|a.annotation.size() > 0).select(a|a.`to`.Name = "Id").size()>0){
+		return true;
+	}
+	
+	return false;
+}

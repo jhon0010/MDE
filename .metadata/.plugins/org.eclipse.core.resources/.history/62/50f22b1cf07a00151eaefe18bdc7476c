@@ -1,0 +1,108 @@
+package service;
+
+import java.util.ArrayList;
+
+import javax.ejb.EJB;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.QueryParam;
+import javax.ws.rs.core.MediaType;
+
+import ejb.ExposicionPerrosEJB;
+
+@Path("/exposicioncanina")
+public class ExposicionPerrosService {
+	
+	@EJB
+	private ExposicionPerrosEJB ejbExpo;
+	
+    /**
+     * Retorna una lista de perros. La lista que se retorna no es la misma que la almacenada en esta clase, pero si tiene el mismo orden.
+     * @return Lista de perros
+     */
+	@GET
+    public ArrayList darPerros( )
+    {
+    	return ejbExpo.darPerros();
+    }
+
+	@GET
+	@Path("ordenarPorRaza")
+    public void ordenarPorRaza( )
+    {
+      ejbExpo.ordenarPorRaza();
+    }
+
+	@GET
+	@Path("ordenarPorNombre")
+    public void ordenarPorNombre( )
+    {
+		ejbExpo.ordenarPorNombre();
+    }
+
+	@GET
+	@Path("ordenarPorPuntos")
+    public void ordenarPorPuntos( )
+    {
+		ejbExpo.ordenarPorPuntos();
+    }
+
+	@GET
+	@Path("ordenarPorEdad")
+    public void ordenarPorEdad( )
+    {
+        ejbExpo.ordenarPorEdad();
+    }
+
+	@GET
+	@Path("buscarPerro/{nombre}")
+    public int buscarPerro( String nombre )
+    {
+		return ejbExpo.buscarPerro(nombre);
+    }
+
+	@GET
+	@Path("buscarBinarioPorNombre/{nombre}")
+	public int buscarBinarioPorNombre( String nombre )
+    {
+		return ejbExpo.buscarBinarioPorNombre(nombre);
+    }
+
+
+	@POST
+	@Consumes(MediaType.APPLICATION_JSON)
+	public boolean agregarPerro(@QueryParam("nombreP") String nombreP, 
+								@QueryParam("razaP") String razaP, 
+								@QueryParam("imagenP") String imagenP, 
+								@QueryParam("puntosP") int puntosP, 
+								@QueryParam("edadP") int edadP )
+    {
+		return ejbExpo.agregarPerro(nombreP, razaP, imagenP, puntosP, edadP);
+    }
+
+
+	@GET
+	@Path("buscarPerroMayorPuntaje")
+    public int buscarPerroMayorPuntaje( )
+    {
+    	return ejbExpo.buscarPerroMayorPuntaje();
+    }
+
+	@GET
+	@Path("buscarPerroMenorPuntaje")
+    public int buscarPerroMenorPuntaje( )
+    {
+		return ejbExpo.buscarPerroMayorPuntaje();
+    }
+
+
+	@GET
+	@Path("buscarPerroMayorEdad")
+    public int buscarPerroMayorEdad( )
+    {
+		return ejbExpo.buscarPerroMayorEdad();
+    }
+	
+}

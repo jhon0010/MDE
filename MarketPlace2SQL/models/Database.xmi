@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<DB:Database
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:DB="DB">
+  <contents
+      xsi:type="DB:Table"
+      name="Cliente"
+      primaryKeys="//@contents.0/@columns.1 //@contents.1/@columns.1">
+    <columns
+        name="name"
+        type="int"/>
+    <columns
+        name="id"
+        type="int"/>
+  </contents>
+  <contents
+      xsi:type="DB:Table"
+      name="Item"
+      primaryKeys="//@contents.1/@columns.0">
+    <columns
+        name="Id"
+        type="int"
+        notNull="true"/>
+    <columns
+        name="name"
+        type="varchar"/>
+  </contents>
+  <contents
+      xsi:type="DB:ForeignKey"
+      name="FK_Item_Cliente"
+      parent="//@contents.1/@columns.0"
+      child="//@contents.1/@columns.1"
+      isMany="false"/>
+</DB:Database>

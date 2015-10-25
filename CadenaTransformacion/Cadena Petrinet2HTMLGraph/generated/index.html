@@ -1,0 +1,57 @@
+<html>
+
+<head>
+
+   <script type="text/javascript" src="../assets/js/raphael-min.js"></script>
+
+   <script type="text/javascript" src="../assets/js/dracula_graffle.js"></script>
+
+   <script type="text/javascript" src="../assets/js/jquery-1.4.2.min.js"></script>
+
+   <script type="text/javascript" src="../assets/js/dracula_graph.js"></script>
+
+</head>
+
+<body>
+
+<h2>Grafo:</h2>
+
+<div id="canvas"></div>
+
+</body>
+
+<script>
+
+// Agregar grafo
+
+window.onload = function() {
+
+  var g = new Graph();
+
+g.addEdge("strawberry", "cherry");
+
+g.addEdge("strawberry", "apple");
+
+g.addEdge("strawberry", "tomato");
+
+g.addEdge("tomato", "apple");
+
+g.addEdge("tomato", "kiwi");
+
+g.addEdge("cherry", "apple");
+
+g.addEdge("cherry", "kiwi");
+
+var layouter = new Graph.Layout.Spring(g);
+
+layouter.layout();
+
+var renderer = new Graph.Renderer.Raphael('canvas', g, 400, 300);
+
+renderer.draw();
+
+};
+
+</script>
+
+</html>

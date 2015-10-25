@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DB="DB">
+  <DB:Database/>
+  <DB:Database>
+    <contents xsi:type="DB:Table" name="ClientEntity" primaryKeys="/1/@contents.0/@columns.0">
+      <columns name="id" type="int" notNull="true"/>
+      <columns name="password" type="varchar"/>
+      <columns name="name" type="varchar"/>
+    </contents>
+    <contents xsi:type="DB:Table" name="ProductoEntity" primaryKeys="/1/@contents.1/@columns.1">
+      <columns name="name" type="varchar"/>
+      <columns name="id" type="int" notNull="true"/>
+    </contents>
+    <contents xsi:type="DB:Table" name="CarritoEntity" primaryKeys="/1/@contents.2/@columns.0">
+      <columns name="id" type="int" notNull="true"/>
+      <columns name="name" type="varchar"/>
+      <columns name="clientId" type="int"/>
+    </contents>
+    <contents xsi:type="DB:Table" name="CarritoitemEntity" primaryKeys="/1/@contents.3/@columns.0 /1/@contents.3/@columns.1">
+      <columns name="carritoId" type="int" notNull="true"/>
+      <columns name="itemId" type="int" notNull="true"/>
+      <columns name="carritoIdEntity" type="unknown"/>
+      <columns name="itemIdEntity" type="unknown"/>
+    </contents>
+    <contents xsi:type="DB:Table" name="ItemEntity" primaryKeys="/1/@contents.4/@columns.0">
+      <columns name="id" type="int" notNull="true"/>
+      <columns name="cantidad" type="int"/>
+      <columns name="name" type="varchar"/>
+      <columns name="productoId" type="int"/>
+    </contents>
+  </DB:Database>
+</xmi:XMI>
