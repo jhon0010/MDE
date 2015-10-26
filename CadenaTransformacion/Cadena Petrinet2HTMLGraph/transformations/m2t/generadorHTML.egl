@@ -32,11 +32,16 @@ window.onload = function() {
 [% 
 	for (node in Graph!Node.all){
 	
-%]	g.addEdge("[[%= node.name%]]","[%=node.outgoing.target.name%]");
-
+		if(node.outgoing.size() = 0) {
+%]			g.addNode("[[%= node.name%]]"); 
 [%
+		} else {
+%]
+			g.addEdge("[[%= node.name%]]","[%=node.outgoing.target.name%]");
+[%
+		} 
 	}
- %]
+ 	%]
 
 var layouter = new Graph.Layout.Spring(g);
 

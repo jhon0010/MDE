@@ -20,7 +20,8 @@
 
   <echo>Borrando el contenido de la carpeta generated</echo>
 
-   <delete dir="${generated.location}" failonerror="true" />
+	<delete file="${generated.location}/index.html" failonerror="true" />
+	
 
 <antcall target="m2m" />
 
