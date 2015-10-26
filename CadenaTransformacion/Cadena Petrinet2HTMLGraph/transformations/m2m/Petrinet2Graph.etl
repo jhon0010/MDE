@@ -47,7 +47,12 @@ rule transition2Node
 	to nod : Graph!Node {
 		nod.name = tra.name;
 	}		
-
+	
+/**
+  Regla que permite tomar los arcs del modelo petrinet cuando se incluyan en un equivalent 
+  y dar su origen (from) a los edge source() de salida del grafo y también los (to) del arc 
+  con los (source) del edge
+*/
 @Lazy
 rule arc2Edge
 	transform arc : Petrinet!Arc
@@ -56,8 +61,6 @@ rule arc2Edge
 		//arc.println();
 		edg.source = arc.from.equivalent();
 		edg.target = arc.`to`.equivalent(); 
-		// = ;
-		//arc.`to` = edg.target;
 	}	
 
 

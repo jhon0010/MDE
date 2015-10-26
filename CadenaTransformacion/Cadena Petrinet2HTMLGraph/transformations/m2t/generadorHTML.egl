@@ -28,19 +28,15 @@ window.onload = function() {
 
   var g = new Graph();
 
-g.addEdge("strawberry", "cherry");
 
-g.addEdge("strawberry", "apple");
+[% 
+	for (node in Graph!Node.all){
+	
+%]	g.addEdge("[[%= node.name%]]","[%=node.outgoing.target.name%]");
 
-g.addEdge("strawberry", "tomato");
-
-g.addEdge("tomato", "apple");
-
-g.addEdge("tomato", "kiwi");
-
-g.addEdge("cherry", "apple");
-
-g.addEdge("cherry", "kiwi");
+[%
+	}
+ %]
 
 var layouter = new Graph.Layout.Spring(g);
 

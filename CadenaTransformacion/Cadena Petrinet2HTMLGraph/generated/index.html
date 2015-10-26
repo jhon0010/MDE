@@ -28,19 +28,17 @@ window.onload = function() {
 
   var g = new Graph();
 
-g.addEdge("strawberry", "cherry");
 
-g.addEdge("strawberry", "apple");
+	g.addEdge("[t1]","[p1]");
 
-g.addEdge("strawberry", "tomato");
+	g.addEdge("[p1]","[t2]");
 
-g.addEdge("tomato", "apple");
+	g.addEdge("[t2]","[p2]");
 
-g.addEdge("tomato", "kiwi");
+	g.addEdge("[p2]","[t3]");
 
-g.addEdge("cherry", "apple");
+	g.addEdge("[t3]","[]");
 
-g.addEdge("cherry", "kiwi");
 
 var layouter = new Graph.Layout.Spring(g);
 
