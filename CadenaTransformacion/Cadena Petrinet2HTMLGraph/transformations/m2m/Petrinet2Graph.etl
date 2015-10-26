@@ -1,5 +1,82 @@
+/**
+	Regla principal que permite tomar el nodo raíz y mapearlo contra el grafo
+*/
 rule Petrinet2Graph 
 	transform p : Petrinet!Petrinet
 	to g : Graph!Graph {
-		// COMPLETAR!
+		
+		g.nodes = p.getPlacesAndTransition().equivalent();
+
+		//g.nodes.outgoing = p.getArcs().equivalent();
+		
+		for (n in g.nodes){			
+			for (a in  p.getArcs()){ // por cada nodo recorremos todos los arcs
+				if (not a.From.isUndefined() and n.name == a.From.name){
+					"Coincide arc from con node".println();
+					n.name.println();
+					a.From.name.println();
+					
+					// asignamos el edge
+					//n.outgoing =  p.getArcs().equivalent();
+					
+					//p.getArcs().select(arc | arc.from.name = 'p1').println();
+				}
+			}
+		}
+
 	}
+	
+/**
+  Regla que permite tomar los places cuando se incluyan en un equivalent 
+  y dar su nombre a los nodos de salida del grafo
+*/	
+@Lazy
+rule place2Node
+	transform pla : Petrinet!Place
+	to nod : Graph!Node {
+		nod.name = pla.name;
+	}	
+
+/**
+  Regla que permite tomar los transition cuando se incluyan en un equivalent 
+  y dar su nombre a los nodos de salida del grafo
+*/		
+@Lazy
+rule transition2Node
+	transform tra : Petrinet!Transition
+	to nod : Graph!Node {
+		nod.name = tra.name;
+	}		
+
+@Lazy
+rule arc2Edge
+	transform arc : Petrinet!Arc
+	to edg : Graph!Edge {
+
+		//arc.println();
+		edg.source = arc.from.equivalent();
+		edg.target = arc.`to`.equivalent(); 
+		// = ;
+		//arc.`to` = edg.target;
+	}	
+
+
+/**
+  Operación que retorna los arc del modelo petrinet 
+*/
+operation Petrinet!Petrinet getArcs() : Set
+{
+	return self.elements.select(ele | ele.isTypeOf(Petrinet!Arc)); 
+}	
+
+	
+/**
+  Operación que retorna los places y los transition en un set para ser procesados
+*/
+operation Petrinet!Petrinet getPlacesAndTransition() : Set
+{
+	return self.elements.select(ele | ele.isTypeOf(Petrinet!Transition) or ele.isTypeOf(Petrinet!Place)); 
+}	
+
+
+		
