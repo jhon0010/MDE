@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ASCII"?>
+<html5:html xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:html5="http://www.example.org/html5">
+  <body>
+    <container xsi:type="html5:div">
+      <innercontainer xsi:type="html5:fieldset">
+        <elements xsi:type="html5:table">
+          <tr>
+            <td>
+              <elements xsi:type="html5:label"/>
+              <elements xsi:type="html5:table">
+                <tr>
+                  <td/>
+                </tr>
+              </elements>
+            </td>
+          </tr>
+        </elements>
+        <elements xsi:type="html5:select"/>
+      </innercontainer>
+    </container>
+  </body>
+</html5:html>
