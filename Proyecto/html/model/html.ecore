@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="html" nsURI="http://www.example.org/html" nsPrefix="html">
+  <eClassifiers xsi:type="ecore:EClass" name="div">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="divs" eType="#//div"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="class" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="table" eSuperTypes="#//htmElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="row" upperBound="-1" eType="#//tr"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="tr">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="col" upperBound="-1" eType="#//td"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="td">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="element" eType="#//htmElement"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="htmElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="class" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="class"/>
+        <details key="kind" value="simple"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="img" eSuperTypes="#//htmElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="label" eSuperTypes="#//htmElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Input" eSuperTypes="#//htmElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//types"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="button" eSuperTypes="#//htmElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//types"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="body">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="divs" eType="#//div" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="select" eSuperTypes="#//htmElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="options" eType="#//option"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="option"/>
+  <eClassifiers xsi:type="ecore:EClass" name="fieldset" eSuperTypes="#//htmElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="legend" eType="#//legend"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="divs" upperBound="-1" eType="#//div"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="types">
+    <eLiterals name="text"/>
+    <eLiterals name="number"/>
+    <eLiterals name="button"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Html">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="body" lowerBound="1" eType="#//body"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="dialog" eSuperTypes="#//htmElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="legend"/>
+</ecore:EPackage>

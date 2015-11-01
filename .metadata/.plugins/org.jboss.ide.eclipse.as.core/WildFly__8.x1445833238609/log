@@ -1,0 +1,294 @@
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-10-25 23:44:08.300
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-10-25 23:44:23.454
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298246 2015-10-25 23:47:27.031
+!MESSAGE Unable to delete module
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-25 23:47:27.031
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-25 23:47:27.031
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-25 23:47:27.031
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF\maven. May be locked by another process.
+!SUBENTRY 4 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-25 23:47:27.031
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF\maven. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-25 23:47:27.031
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\WEB-INF. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-25 23:47:27.031
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\WEB-INF. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298246 2015-10-25 23:50:54.666
+!MESSAGE Unable to delete module
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-25 23:50:54.666
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-25 23:50:54.666
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-25 23:50:54.666
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF\maven. May be locked by another process.
+!SUBENTRY 4 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-25 23:50:54.666
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF\maven\edu.uniandes.expo.canina. May be locked by another process.
+!SUBENTRY 5 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-25 23:50:54.666
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF\maven\edu.uniandes.expo.canina. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-25 23:50:54.666
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\WEB-INF. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-25 23:50:54.666
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\WEB-INF\classes. May be locked by another process.
+!SUBENTRY 4 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-25 23:50:54.667
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\WEB-INF\classes. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298246 2015-10-25 23:58:49.055
+!MESSAGE Unable to delete module
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-25 23:58:49.057
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-25 23:58:49.057
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-25 23:58:49.057
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF\maven. May be locked by another process.
+!SUBENTRY 4 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-25 23:58:49.057
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF\maven. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-25 23:58:49.057
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\WEB-INF. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-25 23:58:49.057
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\WEB-INF. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298246 2015-10-26 00:00:48.871
+!MESSAGE Unable to delete module
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:00:48.871
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:00:48.871
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:00:48.871
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298246 2015-10-26 00:01:46.920
+!MESSAGE Unable to delete module
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:01:46.920
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:01:46.921
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\META-INF. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:01:46.921
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\META-INF\maven. May be locked by another process.
+!SUBENTRY 4 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:01:46.921
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\META-INF\maven. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:01:46.921
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\WEB-INF. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:01:46.921
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\WEB-INF\classes. May be locked by another process.
+!SUBENTRY 4 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:01:46.921
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\WEB-INF\classes\edu. May be locked by another process.
+!SUBENTRY 5 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:01:46.921
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\WEB-INF\classes\edu\uniandes. May be locked by another process.
+!SUBENTRY 6 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:01:46.921
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\WEB-INF\classes\edu\uniandes\hello. May be locked by another process.
+!SUBENTRY 7 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:01:46.921
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\WEB-INF\classes\edu\uniandes\hello. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298246 2015-10-26 00:05:44.599
+!MESSAGE Unable to delete module
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:05:44.599
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:05:44.599
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\WEB-INF. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:05:44.600
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\WEB-INF. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298246 2015-10-26 00:07:41.327
+!MESSAGE Unable to delete module
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:07:41.327
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:07:41.327
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\META-INF. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:07:41.327
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\META-INF. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:07:41.327
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\WEB-INF. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:07:41.327
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\WEB-INF\classes. May be locked by another process.
+!SUBENTRY 4 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:07:41.327
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\WEB-INF\classes\edu. May be locked by another process.
+!SUBENTRY 5 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:07:41.327
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\WEB-INF\classes\edu\uniandes. May be locked by another process.
+!SUBENTRY 6 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:07:41.327
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\WEB-INF\classes\edu\uniandes\hello. May be locked by another process.
+!SUBENTRY 7 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 00:07:41.327
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\WEB-INF\classes\edu\uniandes\hello. May be locked by another process.
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-10-26 21:32:52.729
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-10-26 21:33:25.734
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298246 2015-10-26 21:34:38.147
+!MESSAGE Unable to delete module
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:34:38.147
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:34:38.147
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:34:38.147
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF\maven. May be locked by another process.
+!SUBENTRY 4 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:34:38.147
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF\maven\edu.uniandes.expo.canina. May be locked by another process.
+!SUBENTRY 5 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:34:38.147
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF\maven\edu.uniandes.expo.canina. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:34:38.147
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\WEB-INF. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:34:38.147
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\WEB-INF\classes. May be locked by another process.
+!SUBENTRY 4 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:34:38.147
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\WEB-INF\classes. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298246 2015-10-26 21:34:42.966
+!MESSAGE Unable to delete module
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:34:42.966
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:34:42.966
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\WEB-INF. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:34:42.966
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\WEB-INF\classes. May be locked by another process.
+!SUBENTRY 4 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:34:42.966
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\WEB-INF\classes\edu. May be locked by another process.
+!SUBENTRY 5 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:34:42.966
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\HelloRest.war\WEB-INF\classes\edu. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2015-10-26 21:35:42.474
+!MESSAGE Full publish failed for module ExposicionCaninaWeb
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:35:42.474
+!MESSAGE Error reading file E:\DROPBOX_DATA\Dropbox\MAESTRÍA ANDES\MEJORAMIENTO_DE_LA_PRODUCTIVIDAD_AUTOMATIZACION\WorkspaceTransformaciones\ExposicionCaninaWeb\target\m2e-wtp\web-resources\META-INF\MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:35:42.474
+!MESSAGE Error reading file E:\DROPBOX_DATA\Dropbox\MAESTRÍA ANDES\MEJORAMIENTO_DE_LA_PRODUCTIVIDAD_AUTOMATIZACION\WorkspaceTransformaciones\ExposicionCaninaWeb\target\m2e-wtp\web-resources\META-INF\maven\edu.uniandes.expo.canina\ExposicionCaninaWeb\pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:35:42.474
+!MESSAGE Error reading file E:\DROPBOX_DATA\Dropbox\MAESTRÍA ANDES\MEJORAMIENTO_DE_LA_PRODUCTIVIDAD_AUTOMATIZACION\WorkspaceTransformaciones\ExposicionCaninaWeb\target\m2e-wtp\web-resources\META-INF\maven\edu.uniandes.expo.canina\ExposicionCaninaWeb\pom.xml
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2015-10-26 21:38:00.464
+!MESSAGE Full publish failed for module ExposicionCaninaWeb
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:38:00.465
+!MESSAGE Error reading file E:\DROPBOX_DATA\Dropbox\MAESTRÍA ANDES\MEJORAMIENTO_DE_LA_PRODUCTIVIDAD_AUTOMATIZACION\WorkspaceTransformaciones\ExposicionCaninaWeb\target\m2e-wtp\web-resources\META-INF\MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:38:00.465
+!MESSAGE Error reading file E:\DROPBOX_DATA\Dropbox\MAESTRÍA ANDES\MEJORAMIENTO_DE_LA_PRODUCTIVIDAD_AUTOMATIZACION\WorkspaceTransformaciones\ExposicionCaninaWeb\target\m2e-wtp\web-resources\META-INF\maven\edu.uniandes.expo.canina\ExposicionCaninaWeb\pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:38:00.465
+!MESSAGE Error reading file E:\DROPBOX_DATA\Dropbox\MAESTRÍA ANDES\MEJORAMIENTO_DE_LA_PRODUCTIVIDAD_AUTOMATIZACION\WorkspaceTransformaciones\ExposicionCaninaWeb\target\m2e-wtp\web-resources\META-INF\maven\edu.uniandes.expo.canina\ExposicionCaninaWeb\pom.xml
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2015-10-26 21:40:03.603
+!MESSAGE Full publish failed for module ExposicionCaninaWeb
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:40:03.603
+!MESSAGE Error reading file E:\DROPBOX_DATA\Dropbox\MAESTRÍA ANDES\MEJORAMIENTO_DE_LA_PRODUCTIVIDAD_AUTOMATIZACION\WorkspaceTransformaciones\ExposicionCaninaWeb\target\m2e-wtp\web-resources\META-INF\MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:40:03.603
+!MESSAGE Error reading file E:\DROPBOX_DATA\Dropbox\MAESTRÍA ANDES\MEJORAMIENTO_DE_LA_PRODUCTIVIDAD_AUTOMATIZACION\WorkspaceTransformaciones\ExposicionCaninaWeb\target\m2e-wtp\web-resources\META-INF\maven\edu.uniandes.expo.canina\ExposicionCaninaWeb\pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:40:03.603
+!MESSAGE Error reading file E:\DROPBOX_DATA\Dropbox\MAESTRÍA ANDES\MEJORAMIENTO_DE_LA_PRODUCTIVIDAD_AUTOMATIZACION\WorkspaceTransformaciones\ExposicionCaninaWeb\target\m2e-wtp\web-resources\META-INF\maven\edu.uniandes.expo.canina\ExposicionCaninaWeb\pom.xml
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2015-10-26 21:44:28.041
+!MESSAGE Full publish failed for module ExposicionCaninaWeb
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:44:28.041
+!MESSAGE Error reading file E:\DROPBOX_DATA\Dropbox\MAESTRÍA ANDES\MEJORAMIENTO_DE_LA_PRODUCTIVIDAD_AUTOMATIZACION\WorkspaceTransformaciones\ExposicionCaninaWeb\target\m2e-wtp\web-resources\META-INF\maven\edu.uniandes.expo.canina\ExposicionCaninaWeb\pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:44:28.041
+!MESSAGE Error reading file E:\DROPBOX_DATA\Dropbox\MAESTRÍA ANDES\MEJORAMIENTO_DE_LA_PRODUCTIVIDAD_AUTOMATIZACION\WorkspaceTransformaciones\ExposicionCaninaWeb\target\m2e-wtp\web-resources\META-INF\maven\edu.uniandes.expo.canina\ExposicionCaninaWeb\pom.xml
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2015-10-26 21:52:06.040
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-10-26 21:52:06.274
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-10-26 21:52:07.354
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-10-26 21:52:12.615
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298246 2015-10-26 21:54:05.082
+!MESSAGE Unable to delete module
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:54:05.082
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:54:05.082
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\WEB-INF. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:54:05.082
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\WEB-INF\classes. May be locked by another process.
+!SUBENTRY 4 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:54:05.082
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\WEB-INF\classes. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2015-10-26 21:54:13.112
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-10-26 21:54:13.354
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16842768 2015-10-26 21:54:13.392
+!MESSAGE Poll Thread Aborted: null
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-10-26 21:54:14.479
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-10-26 21:54:18.228
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298246 2015-10-26 21:55:47.809
+!MESSAGE Unable to delete module
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:55:47.809
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:55:47.809
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:55:47.809
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF\maven. May be locked by another process.
+!SUBENTRY 4 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:55:47.809
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF\maven\edu.uniandes.expo.canina. May be locked by another process.
+!SUBENTRY 5 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:55:47.809
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF\maven\edu.uniandes.expo.canina. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:55:47.809
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\WEB-INF. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:55:47.809
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\WEB-INF\classes. May be locked by another process.
+!SUBENTRY 4 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:55:47.809
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\WEB-INF\classes. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2015-10-26 21:56:29.257
+!MESSAGE Full publish failed for module ExposicionCaninaWeb
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:56:29.257
+!MESSAGE Error reading file E:\DROPBOX_DATA\Dropbox\MAESTRÍA ANDES\MEJORAMIENTO_DE_LA_PRODUCTIVIDAD_AUTOMATIZACION\WorkspaceTransformaciones\ExposicionCaninaWeb\target\m2e-wtp\web-resources\META-INF\MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:56:29.257
+!MESSAGE Error reading file E:\DROPBOX_DATA\Dropbox\MAESTRÍA ANDES\MEJORAMIENTO_DE_LA_PRODUCTIVIDAD_AUTOMATIZACION\WorkspaceTransformaciones\ExposicionCaninaWeb\target\m2e-wtp\web-resources\META-INF\maven\edu.uniandes.expo.canina\ExposicionCaninaWeb\pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:56:29.257
+!MESSAGE Error reading file E:\DROPBOX_DATA\Dropbox\MAESTRÍA ANDES\MEJORAMIENTO_DE_LA_PRODUCTIVIDAD_AUTOMATIZACION\WorkspaceTransformaciones\ExposicionCaninaWeb\target\m2e-wtp\web-resources\META-INF\maven\edu.uniandes.expo.canina\ExposicionCaninaWeb\pom.xml
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298246 2015-10-26 21:58:54.838
+!MESSAGE Unable to delete module
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:58:54.838
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:58:54.838
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:58:54.838
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF\maven. May be locked by another process.
+!SUBENTRY 4 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:58:54.838
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF\maven\edu.uniandes.expo.canina. May be locked by another process.
+!SUBENTRY 5 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:58:54.838
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\META-INF\maven\edu.uniandes.expo.canina. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:58:54.838
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\WEB-INF. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:58:54.838
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\WEB-INF\classes. May be locked by another process.
+!SUBENTRY 4 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:58:54.838
+!MESSAGE Could not delete E:\JBOSS\wildfly-8.2.1.Final\standalone\deployments\ExposicionCaninaWeb.war\WEB-INF\classes. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2015-10-26 21:59:10.804
+!MESSAGE Full publish failed for module ExposicionCaninaWeb
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:59:10.804
+!MESSAGE Error reading file E:\DROPBOX_DATA\Dropbox\MAESTRÍA ANDES\MEJORAMIENTO_DE_LA_PRODUCTIVIDAD_AUTOMATIZACION\WorkspaceTransformaciones\ExposicionCaninaWeb\target\m2e-wtp\web-resources\META-INF\MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:59:10.804
+!MESSAGE Error reading file E:\DROPBOX_DATA\Dropbox\MAESTRÍA ANDES\MEJORAMIENTO_DE_LA_PRODUCTIVIDAD_AUTOMATIZACION\WorkspaceTransformaciones\ExposicionCaninaWeb\target\m2e-wtp\web-resources\META-INF\maven\edu.uniandes.expo.canina\ExposicionCaninaWeb\pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 21:59:10.804
+!MESSAGE Error reading file E:\DROPBOX_DATA\Dropbox\MAESTRÍA ANDES\MEJORAMIENTO_DE_LA_PRODUCTIVIDAD_AUTOMATIZACION\WorkspaceTransformaciones\ExposicionCaninaWeb\target\m2e-wtp\web-resources\META-INF\maven\edu.uniandes.expo.canina\ExposicionCaninaWeb\pom.xml
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2015-10-26 22:00:43.249
+!MESSAGE Full publish failed for module ExposicionCaninaWeb
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 22:00:43.249
+!MESSAGE Error reading file E:\DROPBOX_DATA\Dropbox\MAESTRÍA ANDES\MEJORAMIENTO_DE_LA_PRODUCTIVIDAD_AUTOMATIZACION\WorkspaceTransformaciones\ExposicionCaninaWeb\target\m2e-wtp\web-resources\META-INF\MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 22:00:43.249
+!MESSAGE Error reading file E:\DROPBOX_DATA\Dropbox\MAESTRÍA ANDES\MEJORAMIENTO_DE_LA_PRODUCTIVIDAD_AUTOMATIZACION\WorkspaceTransformaciones\ExposicionCaninaWeb\target\m2e-wtp\web-resources\META-INF\maven\edu.uniandes.expo.canina\ExposicionCaninaWeb\pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-10-26 22:00:43.249
+!MESSAGE Error reading file E:\DROPBOX_DATA\Dropbox\MAESTRÍA ANDES\MEJORAMIENTO_DE_LA_PRODUCTIVIDAD_AUTOMATIZACION\WorkspaceTransformaciones\ExposicionCaninaWeb\target\m2e-wtp\web-resources\META-INF\maven\edu.uniandes.expo.canina\ExposicionCaninaWeb\pom.xml

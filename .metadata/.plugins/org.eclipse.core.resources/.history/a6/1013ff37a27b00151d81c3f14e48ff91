@@ -1,0 +1,10 @@
+package edu.uniandes.hello.rest;
+
+public class RestClient {
+	
+	public void call(){
+		
+		
+		
+	}
+}

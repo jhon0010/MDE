@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="swing" nsURI="http://www.example.org/modelos" nsPrefix="swing">
+  <eClassifiers xsi:type="ecore:EClass" name="JPanel">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"
+        eType="#//swingElement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="panels" eType="#//JPanel"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="grid" lowerBound="1" eType="#//GridBagConstraints"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="swingElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ImageIcon" eSuperTypes="#//swingElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="JLabel" eSuperTypes="#//swingElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="JTextField" eSuperTypes="#//swingElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="JButton" eSuperTypes="#//swingElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="JList" eSuperTypes="#//swingElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="options" lowerBound="1"
+        eType="#//DefaultListModel"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DefaultListModel"/>
+  <eClassifiers xsi:type="ecore:EClass" name="JFrame">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="panels" upperBound="-1"
+        eType="#//JPanel" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="JOptionPane" eSuperTypes="#//swingElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GridBagConstraints">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="gridx" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="gridy" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fill" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="gridwidth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+</ecore:EPackage>

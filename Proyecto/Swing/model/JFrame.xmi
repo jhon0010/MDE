@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ASCII"?>
+<modelos:JFrame
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:modelos="http://www.example.org/modelos"
+    xsi:schemaLocation="http://www.example.org/modelos modelos.ecore">
+  <panels>
+    <elements
+        xsi:type="modelos:JList"/>
+    <elements
+        xsi:type="modelos:ImageIcon"/>
+    <elements/>
+    <elements
+        xsi:type="modelos:JTextField"/>
+  </panels>
+  <panels>
+    <elements
+        xsi:type="modelos:ImageIcon"/>
+    <elements
+        xsi:type="modelos:JTextField"/>
+    <elements
+        xsi:type="modelos:JOptionPane"/>
+  </panels>
+  <panels>
+    <elements
+        xsi:type="modelos:JList"/>
+    <elements
+        xsi:type="modelos:JButton"/>
+    <elements
+        xsi:type="modelos:JButton"/>
+  </panels>
+</modelos:JFrame>
