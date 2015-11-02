@@ -25,20 +25,16 @@
   <eClassifiers xsi:type="ecore:EClass" name="img" eSuperTypes="#//htmlElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="src" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="label" eSuperTypes="#//htmlElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="label" eSuperTypes="#//htmlElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="input" eSuperTypes="#//htmlElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//types"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="disable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="button" eSuperTypes="#//htmlElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//types"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="body">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="container" upperBound="-1"
-        eType="#//container" containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="select" eSuperTypes="#//htmlElement">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="options" eType="#//option"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="option"/>
   <eClassifiers xsi:type="ecore:EClass" name="fieldset" eSuperTypes="#//container">
@@ -51,12 +47,13 @@
     <eLiterals name="button"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="html">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="body" lowerBound="1" eType="#//body"
-        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="container" upperBound="-1"
+        eType="#//container" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="dialog" eSuperTypes="#//htmlElement"/>
   <eClassifiers xsi:type="ecore:EClass" name="legend">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="class" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="container" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="class" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -68,15 +65,5 @@
   <eClassifiers xsi:type="ecore:EClass" name="select_multiple" eSuperTypes="#//htmlElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="options" eType="#//option"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="multiple" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="input_disable" eSuperTypes="#//htmlElement">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//types"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="disable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="valor">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="valores" eType="#//htmlElement"
-        containment="true"/>
   </eClassifiers>
 </ecore:EPackage>
