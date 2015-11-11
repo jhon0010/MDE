@@ -1,0 +1,27 @@
+pre{
+jm!JMeter.all.collect(d|d.getGrafica());
+}
+operation jm!JMeter getGrafica(): series!Grafica {
+var g= new series!Grafica;
+g.titulo="Basic Colum";
+g.subtitulo="";
+g.tipo=series!TipoGrafica#basicColumn;   
+g.graficaSerie=self.architectureResults.collect(c|c.getSerie());
+return g;
+}
+operation jm!Architecture getSerie(): series!Serie {
+var s= new series!Serie;
+s.name=self.architecture;    
+s.serieDato=self.resultAggregate.collect(c|c.getDato());
+return s;
+}   
+operation jm!Result getDato(): series!Dato {   
+if (self.resultField.at(0).value='Get Competitors' or self.resultField.at(0).value='Add Competitors'){
+var d= new series!Dato;
+d.name=self.resultField.last().value;
+return d;
+}    
+} 
+        
+    
+    

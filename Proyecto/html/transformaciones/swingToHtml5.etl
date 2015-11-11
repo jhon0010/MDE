@@ -17,8 +17,10 @@ to h : Html5!div {
 
 	for (panel in j.getAllPropertiesPanels()) {
 		panel.println();
-		html.container.add(h);
-		h.class='container';
+		divContainer = new Html5!div;
+		divContainer.class = 'row';
+		html.container.add(divContainer);
+	
 	}
 	
 	//j.name.println();
