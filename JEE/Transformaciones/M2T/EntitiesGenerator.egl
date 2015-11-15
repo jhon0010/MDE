@@ -1,0 +1,49 @@
+[%
+
+	for(entity in JEE!Entity.all){
+		if(entityName == entity.name)
+		{
+			
+			%]
+package edu.uniandes.co.jee.entity;
+			
+public class [%=entityName%] 
+{
+	[% 
+		for (att in entity.attributes){
+	%]
+	
+	private [%=att.type%] [%=att.name%];[%				
+		}
+	%]
+	
+	
+	
+	public [%=entityName%] ()
+	{
+		
+	}
+	
+							[%
+					for (atr in entity.attributes){
+						
+						%] 
+	public [%=atr.type%] get[%=atr.name.firstToUpperCase()%]()
+	{
+		return this.[%=atr.name%];
+	}
+	
+	public void set[%=atr.name.firstToUpperCase()%]([%=atr.type%] [%=atr.name%])
+	{
+		this.[%=atr.name%]=[%=atr.name%];
+	}
+	
+	[%
+					}
+				%]
+		
+}	
+			[%
+		}		
+	}
+%]

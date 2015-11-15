@@ -20,3 +20,15 @@
 	}
 %]
 // ----------------  Final generacion de Servicios ---------------------
+
+
+// ---------------- Inicio generacion de Entity ---------------------
+
+[%
+	for(entity in JEE!Entity.all){
+		var t:Template := TemplateFactory.load('EntitiesGenerator.egl');
+		t.populate('entityName', entity.name);
+		t.generate('../../generated/ProyectoMDE/src/edu/uniandes/co/jee/entity/' + entity.name + '.java');
+	}
+%]
+// ----------------  Final generacion de Entity ---------------------

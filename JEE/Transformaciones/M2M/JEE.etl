@@ -53,11 +53,11 @@ rule SERVICERULE
 operation MethodUnit createMethod(restAnnotation:Boolean,clase :jv!ClassUnit){
 	var method:new jEE!Method;
 	method.name=self.name;
-	method.`retorno`=self.createReturnType();
+	method.`return`=self.createReturnType();
 	if(self.codeElement.size()>0){
 		var attributes=self.codeElement.at(0).parameterUnit;
 		for(atribute in attributes){
-			if(atribute.kind.toString()<>'retorno'){
+			if(atribute.kind.toString()<>'return'){
 				atribute.println();
 				var atributeJEE=new jEE!Attribute;
 				atributeJEE.name=atribute.name;
@@ -85,7 +85,7 @@ operation MethodUnit createReturnType(){
 	var returnType="void";
 	var attributes=self.codeElement.at(0).parameterUnit;
 		for(atribute in attributes){
-			if(atribute.kind.toString()='retorno'){
+			if(atribute.kind.toString()='return'){
 				returnType=atribute.type.name;
 				break;
 			}

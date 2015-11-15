@@ -20,7 +20,7 @@ public class [%=serviceName%]
     [%			
 		}
 	%]
-	public [%=method.retorno%] [%=method.name%] ([% for (atr in method.attributes){  %][%=atr.type%] [%=atr.name%][% if(atr.name == method.attributes.last().name){}else{%],[%}} %]){
+	public [%=method.`return`%] [%=method.name%] ([% for (atr in method.attributes){  %][%=atr.type%] [%=atr.name%][% if(atr.name == method.attributes.last().name){}else{%],[%}} %]){
 	
 		
 	}

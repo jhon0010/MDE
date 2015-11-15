@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="ASCII"?>
 <jEE:JEE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:jEE="http://www.example.org/jEE">
   <Ejbs name="BolsaDeEmpleoEJB">
-    <bussinesMethods name="BolsaDeEmpleo" retorno="void"/>
-    <bussinesMethods name="darAspirantes" retorno="ArrayList&lt;E>"/>
-    <bussinesMethods name="ordenarPorNombre" retorno="void"/>
-    <bussinesMethods name="ordenarPorEdad" retorno="void"/>
-    <bussinesMethods name="ordenarPorProfesion" retorno="void"/>
-    <bussinesMethods name="ordenarPorAniosDeExperiencia" retorno="void"/>
-    <bussinesMethods name="buscarAspirante" retorno="int">
+    <bussinesMethods name="BolsaDeEmpleo" return="void"/>
+    <bussinesMethods name="darAspirantes" return="ArrayList&lt;E>"/>
+    <bussinesMethods name="ordenarPorNombre" return="void"/>
+    <bussinesMethods name="ordenarPorEdad" return="void"/>
+    <bussinesMethods name="ordenarPorProfesion" return="void"/>
+    <bussinesMethods name="ordenarPorAniosDeExperiencia" return="void"/>
+    <bussinesMethods name="buscarAspirante" return="int">
       <attributes name="nombre" type="String"/>
     </bussinesMethods>
-    <bussinesMethods name="buscarBinarioPorNombre" retorno="int">
+    <bussinesMethods name="buscarBinarioPorNombre" return="int">
       <attributes name="nombre" type="String"/>
     </bussinesMethods>
-    <bussinesMethods name="agregarAspirante" retorno="boolean">
+    <bussinesMethods name="agregarAspirante" return="boolean">
       <attributes name="nombreA" type="String"/>
       <attributes name="profesionA" type="String"/>
       <attributes name="aniosExperienciaA" type="int"/>
@@ -21,19 +21,19 @@
       <attributes name="telefonoA" type="String"/>
       <attributes name="imagenA" type="String"/>
     </bussinesMethods>
-    <bussinesMethods name="buscarAspiranteMasJoven" retorno="int"/>
-    <bussinesMethods name="buscarAspiranteMayorEdad" retorno="int"/>
-    <bussinesMethods name="buscarAspiranteMayorExperiencia" retorno="int"/>
-    <bussinesMethods name="contratarAspirante" retorno="boolean">
+    <bussinesMethods name="buscarAspiranteMasJoven" return="int"/>
+    <bussinesMethods name="buscarAspiranteMayorEdad" return="int"/>
+    <bussinesMethods name="buscarAspiranteMayorExperiencia" return="int"/>
+    <bussinesMethods name="contratarAspirante" return="boolean">
       <attributes name="nombre" type="String"/>
     </bussinesMethods>
-    <bussinesMethods name="eliminarAspirantesPorExperiencia" retorno="int">
+    <bussinesMethods name="eliminarAspirantesPorExperiencia" return="int">
       <attributes name="aniosExperiencia" type="int"/>
     </bussinesMethods>
-    <bussinesMethods name="verificarInvariante" retorno="void"/>
-    <bussinesMethods name="buscarAspirantesConNombresRepetidos" retorno="boolean"/>
-    <bussinesMethods name="metodo1" retorno="String"/>
-    <bussinesMethods name="metodo2" retorno="String"/>
+    <bussinesMethods name="verificarInvariante" return="void"/>
+    <bussinesMethods name="buscarAspirantesConNombresRepetidos" return="boolean"/>
+    <bussinesMethods name="metodo1" return="String"/>
+    <bussinesMethods name="metodo2" return="String"/>
   </Ejbs>
   <entities name="Aspirante">
     <attributes name="nombre" type="String"/>
@@ -44,43 +44,43 @@
     <attributes name="imagen" type="String"/>
   </entities>
   <services name="BolsaDeEmpleoService">
-    <serviceMethods name="BolsaDeEmpleo" retorno="void">
+    <serviceMethods name="BolsaDeEmpleo" return="void">
       <anotations name="GET"/>
       <anotations name="Path">
         <parameter name="BolsaDeEmpleo"/>
       </anotations>
     </serviceMethods>
-    <serviceMethods name="darAspirantes" retorno="ArrayList&lt;E>">
+    <serviceMethods name="darAspirantes" return="ArrayList&lt;E>">
       <anotations name="GET"/>
       <anotations name="Path">
         <parameter name="darAspirantes"/>
       </anotations>
     </serviceMethods>
-    <serviceMethods name="ordenarPorNombre" retorno="void">
+    <serviceMethods name="ordenarPorNombre" return="void">
       <anotations name="GET"/>
       <anotations name="Path">
         <parameter name="ordenarPorNombre"/>
       </anotations>
     </serviceMethods>
-    <serviceMethods name="ordenarPorEdad" retorno="void">
+    <serviceMethods name="ordenarPorEdad" return="void">
       <anotations name="GET"/>
       <anotations name="Path">
         <parameter name="ordenarPorEdad"/>
       </anotations>
     </serviceMethods>
-    <serviceMethods name="ordenarPorProfesion" retorno="void">
+    <serviceMethods name="ordenarPorProfesion" return="void">
       <anotations name="GET"/>
       <anotations name="Path">
         <parameter name="ordenarPorProfesion"/>
       </anotations>
     </serviceMethods>
-    <serviceMethods name="ordenarPorAniosDeExperiencia" retorno="void">
+    <serviceMethods name="ordenarPorAniosDeExperiencia" return="void">
       <anotations name="GET"/>
       <anotations name="Path">
         <parameter name="ordenarPorAniosDeExperiencia"/>
       </anotations>
     </serviceMethods>
-    <serviceMethods name="buscarAspirante" retorno="int">
+    <serviceMethods name="buscarAspirante" return="int">
       <attributes name="nombre" type="String">
         <anotations name="PathParam">
           <parameter name="nombre"/>
@@ -91,7 +91,7 @@
         <parameter name="buscarAspirante"/>
       </anotations>
     </serviceMethods>
-    <serviceMethods name="buscarBinarioPorNombre" retorno="int">
+    <serviceMethods name="buscarBinarioPorNombre" return="int">
       <attributes name="nombre" type="String">
         <anotations name="PathParam">
           <parameter name="nombre"/>
@@ -102,7 +102,7 @@
         <parameter name="buscarBinarioPorNombre"/>
       </anotations>
     </serviceMethods>
-    <serviceMethods name="agregarAspirante" retorno="boolean">
+    <serviceMethods name="agregarAspirante" return="boolean">
       <attributes name="nombreA" type="String">
         <anotations name="PathParam">
           <parameter name="nombreA"/>
@@ -138,25 +138,25 @@
         <parameter name="agregarAspirante"/>
       </anotations>
     </serviceMethods>
-    <serviceMethods name="buscarAspiranteMasJoven" retorno="int">
+    <serviceMethods name="buscarAspiranteMasJoven" return="int">
       <anotations name="GET"/>
       <anotations name="Path">
         <parameter name="buscarAspiranteMasJoven"/>
       </anotations>
     </serviceMethods>
-    <serviceMethods name="buscarAspiranteMayorEdad" retorno="int">
+    <serviceMethods name="buscarAspiranteMayorEdad" return="int">
       <anotations name="GET"/>
       <anotations name="Path">
         <parameter name="buscarAspiranteMayorEdad"/>
       </anotations>
     </serviceMethods>
-    <serviceMethods name="buscarAspiranteMayorExperiencia" retorno="int">
+    <serviceMethods name="buscarAspiranteMayorExperiencia" return="int">
       <anotations name="GET"/>
       <anotations name="Path">
         <parameter name="buscarAspiranteMayorExperiencia"/>
       </anotations>
     </serviceMethods>
-    <serviceMethods name="contratarAspirante" retorno="boolean">
+    <serviceMethods name="contratarAspirante" return="boolean">
       <attributes name="nombre" type="String">
         <anotations name="PathParam">
           <parameter name="nombre"/>
@@ -167,7 +167,7 @@
         <parameter name="contratarAspirante"/>
       </anotations>
     </serviceMethods>
-    <serviceMethods name="eliminarAspirantesPorExperiencia" retorno="int">
+    <serviceMethods name="eliminarAspirantesPorExperiencia" return="int">
       <attributes name="aniosExperiencia" type="int">
         <anotations name="PathParam">
           <parameter name="aniosExperiencia"/>
@@ -178,25 +178,25 @@
         <parameter name="eliminarAspirantesPorExperiencia"/>
       </anotations>
     </serviceMethods>
-    <serviceMethods name="verificarInvariante" retorno="void">
+    <serviceMethods name="verificarInvariante" return="void">
       <anotations name="GET"/>
       <anotations name="Path">
         <parameter name="verificarInvariante"/>
       </anotations>
     </serviceMethods>
-    <serviceMethods name="buscarAspirantesConNombresRepetidos" retorno="boolean">
+    <serviceMethods name="buscarAspirantesConNombresRepetidos" return="boolean">
       <anotations name="GET"/>
       <anotations name="Path">
         <parameter name="buscarAspirantesConNombresRepetidos"/>
       </anotations>
     </serviceMethods>
-    <serviceMethods name="metodo1" retorno="String">
+    <serviceMethods name="metodo1" return="String">
       <anotations name="GET"/>
       <anotations name="Path">
         <parameter name="metodo1"/>
       </anotations>
     </serviceMethods>
-    <serviceMethods name="metodo2" retorno="String">
+    <serviceMethods name="metodo2" return="String">
       <anotations name="GET"/>
       <anotations name="Path">
         <parameter name="metodo2"/>
