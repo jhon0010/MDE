@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CLASS="/C2R.Metamodels/Class.ecore">
+  <CLASS:System>
+    <elements xsi:type="CLASS:Class" name="Client">
+      <attributes name="id" type="/1"/>
+      <attributes name="password" type="/2"/>
+      <attributes name="name" type="/3"/>
+    </elements>
+    <elements xsi:type="CLASS:Class" name="Producto">
+      <attributes name="name" type="/4"/>
+      <attributes name="id" type="/5"/>
+    </elements>
+    <elements xsi:type="CLASS:Class" name="Carrito">
+      <attributes name="id" type="/6"/>
+      <attributes name="name" type="/7"/>
+      <attributes name="clientId" type="/8"/>
+    </elements>
+    <elements xsi:type="CLASS:Class" name="Carritoitem">
+      <attributes name="carritoId" type="/9"/>
+      <attributes name="itemId" type="/10"/>
+    </elements>
+    <elements xsi:type="CLASS:Class" name="Item">
+      <attributes name="id" type="/11"/>
+      <attributes name="cantidad" type="/12"/>
+      <attributes name="name" type="/13"/>
+      <attributes name="productoId" type="/14"/>
+    </elements>
+  </CLASS:System>
+  <CLASS:DataType name="int"/>
+  <CLASS:DataType name="String"/>
+  <CLASS:DataType name="String"/>
+  <CLASS:DataType name="String"/>
+  <CLASS:DataType name="int"/>
+  <CLASS:DataType name="int"/>
+  <CLASS:DataType name="String"/>
+  <CLASS:DataType name="int"/>
+  <CLASS:DataType name="int"/>
+  <CLASS:DataType name="int"/>
+  <CLASS:DataType name="int"/>
+  <CLASS:DataType name="int"/>
+  <CLASS:DataType name="String"/>
+  <CLASS:DataType name="int"/>
+</xmi:XMI>

@@ -1,0 +1,53 @@
+[%
+
+	for(class in Java!Class.all){
+		if(className == class.name)
+		{
+			
+			%]
+package com.uniandes.edu.co;
+			
+public class [%=className%] 
+{
+				[%
+					for (atr in class.attributes){
+						
+						%] 
+	private [%=atr.type.name%] [%=atr.name%];[%
+					}
+				%]
+				
+				
+	public [%=className%] ([% for (atr in class.attributes){  %][%=atr.type.name%] [%=atr.name%][% if(atr.name == class.attributes.last().name){}else{%],[%}} %])
+	{
+		[%
+		for (atr in class.attributes){						
+		%]
+		this.[%=atr.name%]= [%=atr.name%];
+		[%
+		}
+		%]
+	}
+		
+						[%
+					for (atr in class.attributes){
+						
+						%] 
+	public [%=atr.type.name%] get[%=atr.name.firstToUpperCase()%]()
+	{
+		return this.[%=atr.name%];
+	}
+	
+	public void set[%=atr.name.firstToUpperCase()%]([%=atr.type.name%] [%=atr.name%])
+	{
+		this.[%=atr.name%]=[%=atr.name%];
+	}
+	
+	[%
+					}
+				%]
+}
+			[%
+		}		
+	}
+%]

@@ -1,0 +1,7 @@
+[%
+	for(class in Java!Class.all){
+		var t:Template := TemplateFactory.load('ClassGeneratorEGL.egl');
+		t.populate('className', class.name);
+		t.generate('../../generated/Clientes/src/com/uniandes/edu/co/' + class.name + '.java');
+	}
+%]

@@ -1,0 +1,50 @@
+/**
+	Se inicializa la instancia del modelo con su clase System
+*/
+pre {
+	var System = new Java!System;
+}
+
+/**
+	Regla principal permite transformar la tabla por clases del modelo
+*/
+rule tableToClass 
+transform table : DB!Table
+to class : Java!Class{
+	
+	class.name = table.name;
+	class.system = System;
+	
+	class.attributes = table.columns.equivalent();
+}
+
+/**
+	Permite reemplazar las columnas por atributos de la clase 
+	cuando sea llamado por equivalent
+*/
+@Lazy
+rule ColumnToAttributte
+transform col : DB!Column 
+to atr : Java!Attribute {
+
+	atr.name = col.name;
+	
+	var dataType = new Java!DataType;
+	
+		
+	// Segun el tipo de dato se asigna uno java correspondiente al que se tiene en el modelo de DB
+	switch(col.type){
+		
+		case DB!DataType#int : dataType.name = 'int';
+			 break;
+		case DB!DataType#varchar : dataType.name = 'String'; 
+			 break;
+		case DB!DataType#text : dataType.name = 'String';
+			 break;
+		default :  dataType.name = 'Object';
+	}
+	//dataType.system = System;
+	atr.type = dataType;
+	//atr.system = System;
+}
+

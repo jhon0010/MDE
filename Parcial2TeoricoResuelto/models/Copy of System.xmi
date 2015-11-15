@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<CLASS:System
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:CLASS="/C2R.Metamodels/Class.ecore">
+  <elements
+      xsi:type="CLASS:Class"
+      name="Test">
+    <attributes
+        name="id"
+        type="//@elements.1"/>
+  </elements>
+  <elements
+      xsi:type="CLASS:DataType"
+      name="int"/>
+</CLASS:System>

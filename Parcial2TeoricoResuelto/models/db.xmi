@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DB="DB">
+  <DB:Database name="Clientes">
+    <contents xsi:type="DB:Table" name="Client" primaryKeys="/0/@contents.0/@columns.0">
+      <columns name="id" type="int" notNull="true"/>
+      <columns name="password" type="varchar"/>
+      <columns name="name" type="varchar"/>
+    </contents>
+    <contents xsi:type="DB:Table" name="Producto" primaryKeys="/0/@contents.1/@columns.1">
+      <columns name="name" type="varchar"/>
+      <columns name="id" type="int" notNull="true"/>
+    </contents>
+    <contents xsi:type="DB:Table" name="Carrito" primaryKeys="/0/@contents.2/@columns.0">
+      <columns name="id" type="int" notNull="true"/>
+      <columns name="name" type="varchar"/>
+      <columns name="clientId" type="int"/>
+    </contents>
+    <contents xsi:type="DB:Table" name="Carritoitem" primaryKeys="/0/@contents.3/@columns.0 /0/@contents.3/@columns.1">
+      <columns name="carritoId" type="int" notNull="true"/>
+      <columns name="itemId" type="int" notNull="true"/>
+    </contents>
+    <contents xsi:type="DB:Table" name="Item" primaryKeys="/0/@contents.4/@columns.0">
+      <columns name="id" type="int" notNull="true"/>
+      <columns name="cantidad" type="int"/>
+      <columns name="name" type="varchar"/>
+      <columns name="productoId" type="int"/>
+    </contents>
+    <contents xsi:type="DB:ForeignKey" parent="/0/@contents.2/@columns.0" child="/0/@contents.3/@columns.0"/>
+    <contents xsi:type="DB:ForeignKey" parent="/0/@contents.4/@columns.0" child="/0/@contents.3/@columns.1"/>
+  </DB:Database>
+  <DB:Database/>
+</xmi:XMI>

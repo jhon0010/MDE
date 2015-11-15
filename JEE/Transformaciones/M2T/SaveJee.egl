@@ -1,0 +1,22 @@
+// ---------------- Inicio generacion de EJBs ---------------------
+
+[%
+	for(ejb in JEE!EJB.all){
+		var t:Template := TemplateFactory.load('EJBGenerator.egl');
+		t.populate('ejbName', ejb.name);
+		t.generate('../../generated/ProyectoMDE/src/edu/uniandes/co/jee/ejb/' + ejb.name + '.java');
+	}
+%]
+// ----------------  Final generacion de EJBs ---------------------
+
+
+// ---------------- Inicio generacion de Servicios ---------------------
+
+[%
+	for(service in JEE!Service.all){
+		var t:Template := TemplateFactory.load('ServiceGenerator.egl');
+		t.populate('serviceName', service.name);
+		t.generate('../../generated/ProyectoMDE/src/edu/uniandes/co/jee/service/' + service.name + '.java');
+	}
+%]
+// ----------------  Final generacion de Servicios ---------------------

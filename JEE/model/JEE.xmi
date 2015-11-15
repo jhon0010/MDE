@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="ASCII"?>
+<jEE:JEE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:jEE="http://www.example.org/jEE">
+  <Ejbs name="BolsaDeEmpleoEJB">
+    <bussinesMethods name="BolsaDeEmpleo" retorno="void"/>
+    <bussinesMethods name="darAspirantes" retorno="ArrayList&lt;E>"/>
+    <bussinesMethods name="ordenarPorNombre" retorno="void"/>
+    <bussinesMethods name="ordenarPorEdad" retorno="void"/>
+    <bussinesMethods name="ordenarPorProfesion" retorno="void"/>
+    <bussinesMethods name="ordenarPorAniosDeExperiencia" retorno="void"/>
+    <bussinesMethods name="buscarAspirante" retorno="int">
+      <attributes name="nombre" type="String"/>
+    </bussinesMethods>
+    <bussinesMethods name="buscarBinarioPorNombre" retorno="int">
+      <attributes name="nombre" type="String"/>
+    </bussinesMethods>
+    <bussinesMethods name="agregarAspirante" retorno="boolean">
+      <attributes name="nombreA" type="String"/>
+      <attributes name="profesionA" type="String"/>
+      <attributes name="aniosExperienciaA" type="int"/>
+      <attributes name="edadA" type="int"/>
+      <attributes name="telefonoA" type="String"/>
+      <attributes name="imagenA" type="String"/>
+    </bussinesMethods>
+    <bussinesMethods name="buscarAspiranteMasJoven" retorno="int"/>
+    <bussinesMethods name="buscarAspiranteMayorEdad" retorno="int"/>
+    <bussinesMethods name="buscarAspiranteMayorExperiencia" retorno="int"/>
+    <bussinesMethods name="contratarAspirante" retorno="boolean">
+      <attributes name="nombre" type="String"/>
+    </bussinesMethods>
+    <bussinesMethods name="eliminarAspirantesPorExperiencia" retorno="int">
+      <attributes name="aniosExperiencia" type="int"/>
+    </bussinesMethods>
+    <bussinesMethods name="verificarInvariante" retorno="void"/>
+    <bussinesMethods name="buscarAspirantesConNombresRepetidos" retorno="boolean"/>
+    <bussinesMethods name="metodo1" retorno="String"/>
+    <bussinesMethods name="metodo2" retorno="String"/>
+  </Ejbs>
+  <entities name="Aspirante">
+    <attributes name="nombre" type="String"/>
+    <attributes name="profesion" type="String"/>
+    <attributes name="aniosExperiencia" type="int"/>
+    <attributes name="edad" type="int"/>
+    <attributes name="telefono" type="String"/>
+    <attributes name="imagen" type="String"/>
+  </entities>
+  <services name="BolsaDeEmpleoService">
+    <serviceMethods name="BolsaDeEmpleo" retorno="void">
+      <anotations name="GET"/>
+      <anotations name="Path">
+        <parameter name="BolsaDeEmpleo"/>
+      </anotations>
+    </serviceMethods>
+    <serviceMethods name="darAspirantes" retorno="ArrayList&lt;E>">
+      <anotations name="GET"/>
+      <anotations name="Path">
+        <parameter name="darAspirantes"/>
+      </anotations>
+    </serviceMethods>
+    <serviceMethods name="ordenarPorNombre" retorno="void">
+      <anotations name="GET"/>
+      <anotations name="Path">
+        <parameter name="ordenarPorNombre"/>
+      </anotations>
+    </serviceMethods>
+    <serviceMethods name="ordenarPorEdad" retorno="void">
+      <anotations name="GET"/>
+      <anotations name="Path">
+        <parameter name="ordenarPorEdad"/>
+      </anotations>
+    </serviceMethods>
+    <serviceMethods name="ordenarPorProfesion" retorno="void">
+      <anotations name="GET"/>
+      <anotations name="Path">
+        <parameter name="ordenarPorProfesion"/>
+      </anotations>
+    </serviceMethods>
+    <serviceMethods name="ordenarPorAniosDeExperiencia" retorno="void">
+      <anotations name="GET"/>
+      <anotations name="Path">
+        <parameter name="ordenarPorAniosDeExperiencia"/>
+      </anotations>
+    </serviceMethods>
+    <serviceMethods name="buscarAspirante" retorno="int">
+      <attributes name="nombre" type="String">
+        <anotations name="PathParam">
+          <parameter name="nombre"/>
+        </anotations>
+      </attributes>
+      <anotations name="GET"/>
+      <anotations name="Path">
+        <parameter name="buscarAspirante"/>
+      </anotations>
+    </serviceMethods>
+    <serviceMethods name="buscarBinarioPorNombre" retorno="int">
+      <attributes name="nombre" type="String">
+        <anotations name="PathParam">
+          <parameter name="nombre"/>
+        </anotations>
+      </attributes>
+      <anotations name="GET"/>
+      <anotations name="Path">
+        <parameter name="buscarBinarioPorNombre"/>
+      </anotations>
+    </serviceMethods>
+    <serviceMethods name="agregarAspirante" retorno="boolean">
+      <attributes name="nombreA" type="String">
+        <anotations name="PathParam">
+          <parameter name="nombreA"/>
+        </anotations>
+      </attributes>
+      <attributes name="profesionA" type="String">
+        <anotations name="PathParam">
+          <parameter name="profesionA"/>
+        </anotations>
+      </attributes>
+      <attributes name="aniosExperienciaA" type="int">
+        <anotations name="PathParam">
+          <parameter name="aniosExperienciaA"/>
+        </anotations>
+      </attributes>
+      <attributes name="edadA" type="int">
+        <anotations name="PathParam">
+          <parameter name="edadA"/>
+        </anotations>
+      </attributes>
+      <attributes name="telefonoA" type="String">
+        <anotations name="PathParam">
+          <parameter name="telefonoA"/>
+        </anotations>
+      </attributes>
+      <attributes name="imagenA" type="String">
+        <anotations name="PathParam">
+          <parameter name="imagenA"/>
+        </anotations>
+      </attributes>
+      <anotations name="POST"/>
+      <anotations name="Path">
+        <parameter name="agregarAspirante"/>
+      </anotations>
+    </serviceMethods>
+    <serviceMethods name="buscarAspiranteMasJoven" retorno="int">
+      <anotations name="GET"/>
+      <anotations name="Path">
+        <parameter name="buscarAspiranteMasJoven"/>
+      </anotations>
+    </serviceMethods>
+    <serviceMethods name="buscarAspiranteMayorEdad" retorno="int">
+      <anotations name="GET"/>
+      <anotations name="Path">
+        <parameter name="buscarAspiranteMayorEdad"/>
+      </anotations>
+    </serviceMethods>
+    <serviceMethods name="buscarAspiranteMayorExperiencia" retorno="int">
+      <anotations name="GET"/>
+      <anotations name="Path">
+        <parameter name="buscarAspiranteMayorExperiencia"/>
+      </anotations>
+    </serviceMethods>
+    <serviceMethods name="contratarAspirante" retorno="boolean">
+      <attributes name="nombre" type="String">
+        <anotations name="PathParam">
+          <parameter name="nombre"/>
+        </anotations>
+      </attributes>
+      <anotations name="GET"/>
+      <anotations name="Path">
+        <parameter name="contratarAspirante"/>
+      </anotations>
+    </serviceMethods>
+    <serviceMethods name="eliminarAspirantesPorExperiencia" retorno="int">
+      <attributes name="aniosExperiencia" type="int">
+        <anotations name="PathParam">
+          <parameter name="aniosExperiencia"/>
+        </anotations>
+      </attributes>
+      <anotations name="DELETE"/>
+      <anotations name="Path">
+        <parameter name="eliminarAspirantesPorExperiencia"/>
+      </anotations>
+    </serviceMethods>
+    <serviceMethods name="verificarInvariante" retorno="void">
+      <anotations name="GET"/>
+      <anotations name="Path">
+        <parameter name="verificarInvariante"/>
+      </anotations>
+    </serviceMethods>
+    <serviceMethods name="buscarAspirantesConNombresRepetidos" retorno="boolean">
+      <anotations name="GET"/>
+      <anotations name="Path">
+        <parameter name="buscarAspirantesConNombresRepetidos"/>
+      </anotations>
+    </serviceMethods>
+    <serviceMethods name="metodo1" retorno="String">
+      <anotations name="GET"/>
+      <anotations name="Path">
+        <parameter name="metodo1"/>
+      </anotations>
+    </serviceMethods>
+    <serviceMethods name="metodo2" retorno="String">
+      <anotations name="GET"/>
+      <anotations name="Path">
+        <parameter name="metodo2"/>
+      </anotations>
+    </serviceMethods>
+  </services>
+</jEE:JEE>
