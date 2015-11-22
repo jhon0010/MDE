@@ -24,21 +24,21 @@ public class [%=entityName%]
 		
 	}
 	
-							[%
+	[%
 					for (atr in entity.attributes){
 						
 						%] 
-	public [%=atr.type%] get[%=atr.name.firstToUpperCase()%]()
-	{
-		return this.[%=atr.name%];
-	}
-	
-	public void set[%=atr.name.firstToUpperCase()%]([%=atr.type%] [%=atr.name%])
-	{
-		this.[%=atr.name%]=[%=atr.name%];
-	}
-	
-	[%
+							public [%=atr.type%] get[%=atr.name.firstToUpperCase()%]()
+							{
+								return this.[%=atr.name%];
+							}
+							
+							public void set[%=atr.name.firstToUpperCase()%]([%=atr.type%] [%=atr.name%])
+							{
+								this.[%=atr.name%]=[%=atr.name%];
+							}
+							
+							[%
 					}
 				%]
 		

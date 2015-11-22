@@ -50,7 +50,7 @@ rule SERVICERULE
 			}	
 		}
 	
-operation jv!MethodUnit createMethod(restAnnotation:Boolean,clase :jv!ClassUnit){
+operation MethodUnit createMethod(restAnnotation:Boolean,clase :jv!ClassUnit){
 	var method:new jEE!Method;
 	method.name=self.name;
 	method.`return`=self.createReturnType();
@@ -79,10 +79,9 @@ operation jv!MethodUnit createMethod(restAnnotation:Boolean,clase :jv!ClassUnit)
 		method.anotations.add(self.createAnnotationMethod());
 		method.anotations.add(self.createAnnotationPath());
 	}
-	method.extractCodigo(clase.source.at(0).region.at(0).file.path);
 	return method;
 }
-operation jv!MethodUnit createReturnType(){
+operation MethodUnit createReturnType(){
 	var returnType="void";
 	var attributes=self.codeElement.at(0).parameterUnit;
 		for(atribute in attributes){
@@ -93,7 +92,7 @@ operation jv!MethodUnit createReturnType(){
 		}
 	return returnType;
 }
-operation jv!MethodUnit createAnnotationPath(){
+operation MethodUnit createAnnotationPath(){
 	var annotation=new jEE!Anotation;
 	var attribute=new jEE!Attribute;
 	attribute.name=self.name;
@@ -102,7 +101,7 @@ operation jv!MethodUnit createAnnotationPath(){
 	return annotation;
 }
 
-operation jv!MethodUnit createAnnotationMethod(){
+operation MethodUnit createAnnotationMethod(){
 	var annotation=new jEE!Anotation;
 	if(self.name.startsWith('eliminar')){
 		annotation.name= 'DELETE';
@@ -114,7 +113,7 @@ operation jv!MethodUnit createAnnotationMethod(){
 	return annotation;
 }
 
-operation  jv!ClassUnit verificarVO(){
+operation  ClassUnit verificarVO(){
 	var tieneGetter=false;
 	/*"---------------------------------------------------".println();
 	self.name.println();
@@ -139,7 +138,7 @@ operation  jv!ClassUnit verificarVO(){
 	return tieneGetter;
 }
 
-operation jv!ClassUnit verficarEJB(){
+operation ClassUnit verficarEJB(){
 	var isEJB=false;
 	/*"---------------------------------------------------".println();
 	self.name.println();
@@ -153,84 +152,3 @@ operation jv!ClassUnit verficarEJB(){
 	
 	return isEJB;
 } 
-
-operation jEE!Method extractCodigo(path){
-	var file=loadFile(path);
-	//file.println();
-	var regExp="\\s*\\w+\\s+"+self.name+"\\s*\\(.*\\)\\s*\\{?\\s*";
-	var pattern=Native("java.util.regex.Pattern").compile(regExp);
-	var metodo="";
-	var llavesAbre=0;
-	var llavesCierra=0;
-	var encontroConstructor=false;
-	var encontroPrimerllave=false;
-	"------------------------".println();
-	self.name.println();
-	"------------------------".println();
-	for(line:String in file ){
-		if(not encontroConstructor){
-			var matcher=pattern.matcher(line);
-			if(matcher.find()){
-				encontroConstructor=true;
-				for(attribute in self.attributes){
-					var strAtt=".*(\\(|\\,)\\s*"+attribute.type+"\\s+"+attribute.name+"(\\,|\\))?.*";
-					if(not line.matches(strAtt)){
-						encontroConstructor=false;
-					}
-				}
-				if(line.matches(".*\\{.*")){
-					encontroPrimerllave=true;
-				}else{
-					continue;
-				}
-				
-			}
-		}else{
-			
-			llavesAbre=llavesAbre+contarCorchetesAbiertos(line);
-			llavesCierra=llavesCierra+contarCorchetesCerrados(line);
-			if( (not encontroPrimerllave ) and line.matches(".*\\{.*")){
-					encontroPrimerllave=true;
-					continue;
-			}
-			if(llavesAbre>0 and llavesAbre==llavesCierra){
-				break;
-			}
-			line.println();
-			metodo=metodo+line+"\n";
-		}
-	}
-	self.code=metodo;
-}
-
-operation contarCorchetesAbiertos(line:String){
-	var pattern=Native("java.util.regex.Pattern").compile("\\{");
-	var matcher=pattern.matcher(line);
-	var i=0;
-	while(matcher.find()){
-		i=i+1;
-	}
-	return i;
-}
-operation contarCorchetesCerrados(line:String){
-	var pattern=Native("java.util.regex.Pattern").compile("\\}");
-	var matcher=pattern.matcher(line);
-	var i=0;
-	while(matcher.find()){
-		i=i+1;
-	}
-	return i;
-}
-operation loadFile(path:String){
-	var file = new Native("java.io.File")(path);
-	var fileReader=new Native("java.io.FileReader")(file);
-	var bufferReader=new Native("java.io.BufferedReader")(fileReader);
-	var fileArray=new Native("java.util.ArrayList");
-	var line=bufferReader.readLine();
-	var fileString="";
-	while(line<>null){
-		fileArray.add(fileString+line);
-		line=bufferReader.readLine();
-	}
-	return fileArray;
-}
