@@ -1,3 +1,14 @@
+[%
+	var f = new Native("org.eclipse.epsilon.egl.formatter.language.JavaFormatter");
+	
+	for(ejb in JEE!EJB.all){
+		var t:Template := TemplateFactory.load('ApplicationConfig.egl');
+		t.setFormatter(f);
+		t.populate('ejbName', ejb.name);
+		t.generate('../../../GeneratedProject/src/edu/uniandes/co/jee/service/ApplicationConfig.java');
+	}
+%]
+
 // ---------------- Inicio generacion de EJBs ---------------------
 
 [%
@@ -7,7 +18,7 @@
 		var t:Template := TemplateFactory.load('EJBGenerator.egl');
 		t.setFormatter(f);
 		t.populate('ejbName', ejb.name);
-		t.generate('../../generated/ProyectoMDE/src/edu/uniandes/co/jee/ejb/' + ejb.name + '.java');
+		t.generate('../../../GeneratedProject/src/edu/uniandes/co/jee/ejb/' + ejb.name + '.java');
 	}
 %]
 // ----------------  Final generacion de EJBs ---------------------
@@ -20,7 +31,7 @@
 		var t:Template := TemplateFactory.load('ServiceGenerator.egl');
 		t.setFormatter(f);
 		t.populate('serviceName', service.name);
-		t.generate('../../generated/ProyectoMDE/src/edu/uniandes/co/jee/service/' + service.name + '.java');
+		t.generate('../../../GeneratedProject/src/edu/uniandes/co/jee/service/' + service.name + '.java');
 	}
 %]
 // ----------------  Final generacion de Servicios ---------------------
@@ -33,7 +44,7 @@
 		var t:Template := TemplateFactory.load('EntitiesGenerator.egl');
 		t.setFormatter(f);
 		t.populate('entityName', entity.name);
-		t.generate('../../generated/ProyectoMDE/src/edu/uniandes/co/jee/entity/' + entity.name + '.java');
+		t.generate('../../../GeneratedProject/src/edu/uniandes/co/jee/entity/' + entity.name + '.java');
 	}
 %]
 // ----------------  Final generacion de Entity ---------------------

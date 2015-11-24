@@ -35,6 +35,11 @@ rule ENTITYRULE
 				t.attributes.add(attributeJEE);
 			}
 			
+			t.methods= new Collection;
+			for(method in c.codeElement.select(ce|ce.isTypeOf(jv!MethodUnit))){
+				t.methods.add(method.createMethod(false,c));
+			}
+			
 		}
 rule SERVICERULE
 	transform

@@ -729,3 +729,11 @@
 2015-10-27 20:27:20,894 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jhon\git\MDE\HelloRest\src\main\resources
 2015-10-27 20:27:20,896 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2015-10-27 20:27:20,897 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jhon\git\MDE\HelloRest\src\test\resources
+2015-11-22 22:05:30,737 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-22 22:05:30,776 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\DROPBOX_DATA\Dropbox\MAESTRÍA ANDES\MEJORAMIENTO_DE_LA_PRODUCTIVIDAD_AUTOMATIZACION\WorkspaceTransformaciones\ExposicionCaninaWeb\src\main\resources
+2015-11-22 22:05:30,778 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-22 22:05:30,779 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\DROPBOX_DATA\Dropbox\MAESTRÍA ANDES\MEJORAMIENTO_DE_LA_PRODUCTIVIDAD_AUTOMATIZACION\WorkspaceTransformaciones\ExposicionCaninaWeb\src\test\resources
+2015-11-22 22:05:38,779 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-22 22:05:38,819 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jhon\git\MDE\HelloRest\src\main\resources
+2015-11-22 22:05:38,821 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-22 22:05:38,822 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jhon\git\MDE\HelloRest\src\test\resources
