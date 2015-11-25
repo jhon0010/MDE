@@ -4,7 +4,9 @@
   <models xmi:type="ecore:EPackage" href="My.ecore#/"/>
   <models xmi:type="jEE:JEE" href="../model/Copy%20of%20JEE.xmi#/"/>
   <models xmi:type="kdm:Segment" href="../model/n7_exposicionCanina_kdm.xmi#/0"/>
-  <models xmi:type="jEE:JEE" href="../model/JEE.xmi#/0"/>
+  <models xmi:type="jEE:JEE" href="../model/JEE.xmi#/"/>
+  <models xmi:type="kdm:Segment" href="../model/bolsaEmpleo_kdm.xmi#/0"/>
+  <models xmi:type="kdm:Segment" href="../model/BolsaDeEmpleo_kdm.xmi#/0"/>
   <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_v2EXQH3XEeWCVqyJ_nMEKA">
     <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_v6XBYH3XEeWCVqyJ_nMEKA" name="jEE class diagram">
       <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_v6XBZn3XEeWCVqyJ_nMEKA" source="GMF_DIAGRAMS">

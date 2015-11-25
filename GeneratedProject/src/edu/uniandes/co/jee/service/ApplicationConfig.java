@@ -15,7 +15,7 @@ public class ApplicationConfig extends Application {
 	*/
 	private void addRestResourceClasses(Set<Class<?>> resources) {
 	
-		resources.add(edu.uniandes.co.jee.service.ExposicionPerrosService.class);
+		resources.add(edu.uniandes.co.jee.service.BolsaDeEmpleoService.class);
 	}
 }
 
