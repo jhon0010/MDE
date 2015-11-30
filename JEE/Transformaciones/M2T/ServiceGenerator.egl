@@ -3,12 +3,32 @@
 	for(service in JEE!Service.all){
 		if(serviceName == service.name)
 		{
-			
+			var ejbName = serviceName.replace("Service","EJB");
+			var path = serviceName.replace("Service","").firstToLowerCase();
 			%]
 package edu.uniandes.co.jee.service;
-			
+
+import edu.uniandes.co.jee.ejb.[%=ejbName%];
+import java.util.List;
+import javax.ejb.EJB;
+import javax.ejb.Stateless;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
+		
+@Stateless
+@Path("[%=path%]")			
 public class [%=serviceName%] 
 {
+
+    @EJB
+    [%=ejbName%] [%=ejbName%];
+
 	[% 
 		for (method in service.serviceMethods){
 	%]
@@ -26,9 +46,24 @@ public class [%=serviceName%]
 		    }			
 		}
 		%]
-	public [%=method.`return`%] [%=method.name%] ([% for (atr in method.attributes){  %][%=atr.type%] [%=atr.name%][% if(atr.name == method.attributes.last().name){}else{%],[%}} %]){
-	
-		[%=method.code%]
+	public [%if ("ordenar".isSubstringOf(method.name) and method.`return`== "void"){ %] list [% } else { %] [%=method.`return`%] [% } %] [%=method.name%] ([% for (atr in method.attributes){  %][%=atr.type%] [%=atr.name%][% if(atr.name == method.attributes.last().name){}else{%],[%}} %]){
+		
+		[% if (method.`return`<> "void"){%]			
+			return [%=ejbName%].[%=method.name%]([% for (atr in method.attributes){  %][%=atr.name%][% if(atr.name == method.attributes.last().name){}else{%],[%}} %]);
+		[% 	} else {
+		
+				"ordenar".isSubstringOf(method.name).println();
+				method.name.println();
+				if ("ordenar".isSubstringOf(method.name))
+				{%] [%=ejbName%].[%=method.name%]([% for (atr in method.attributes){  %][%=atr.name%][% if(atr.name == method.attributes.last().name){}else{%],[%}} %]);
+						 return [%=ejbName%].darAspirantes();[%
+				} else {%]
+					[%=ejbName%].[%=method.name%]([% for (atr in method.attributes){  %][%=atr.name%][% if(atr.name == method.attributes.last().name){}else{%],[%}} %]);
+				[%}			
+			}
+		%]
+		
+		
 	}
 	
 	[%				
